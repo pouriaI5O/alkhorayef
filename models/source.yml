@@ -1,0 +1,13 @@
+version: 2
+
+sources: 
+  - name: public
+    description: A Redshift database
+    database: stage
+    tables:
+      - name: alkhorayef_cams
+        description: akhorayef widing cameras table
+        loaded_at_field: start_time
+        freshness: 
+          warn_after: {count: 12, period: hour}
+          error_after: {count: 48, period: hour}
