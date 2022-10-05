@@ -11,3 +11,9 @@ sources:
         freshness: 
           warn_after: {count: 12, period: hour}
           error_after: {count: 48, period: hour}
+      - name: alkhorayef_zone
+        description: akhorayef widing zone table
+        loaded_at_field: col_timestamp
+        freshness: 
+          warn_after: {count: 12, period: hour}
+          error_after: {count: 48, period: hour}
