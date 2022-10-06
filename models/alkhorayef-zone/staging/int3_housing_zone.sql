@@ -20,4 +20,4 @@ case
   when zone='zone3' then 'station3'
   when zone='zone4' then 'station4'
   else '0' end as station,id,total_minute,sum_total_minute,count_housing ,
-sum_total_minute/count_housing  as capacity from cte3
+sum_total_minute/count_housing  as processing_time ,count_housing/sum_total_minute as capacity from cte3
